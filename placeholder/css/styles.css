@@ -1,0 +1,289 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap');
+
+/* Mobile-Default */
+/*----------------------------------------------------*/
+
+body {
+	margin: 0;
+}
+
+h1, h2, h3, caption {
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+p, nav ul li, td {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 11px;
+}
+
+th {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 11px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* Nav/Header - mobile */
+/*----------------------------------------------------*/
+
+header picture img {
+	max-width: 100%;
+	height: auto;
+}
+
+nav, .redbar {
+	background-color: #A10000;
+	color: white;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	border: 1px solid black;
+	padding: 0.5rem;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+nav ul li a.current-page {
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: blue;
+	text-decoration: underline;
+}
+
+/* Home - mobile */
+/*----------------------------------------------------*/
+
+.wrapper {
+	width: 80%;
+	margin: auto;
+}
+
+.homebox, main, aside {
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 30px;
+	margin: 1rem;
+}
+
+.homebox img {
+	width: 5em;
+	margin: 1rem 0rem 0rem 0rem;
+}
+
+.homebox a:link,
+.homebox a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.homebox a:hover,
+.homebox a:active {
+	color: blue;
+	text-decoration: underline;
+}
+
+.redbar {
+	padding: 0.5rem;
+	text-align: center;
+}
+
+/* About - mobile */
+/*----------------------------------------------------*/
+
+main, aside {
+	padding: 1rem;
+}
+
+main img {
+	width: 250px;
+	border-radius: 30px;
+}
+
+caption {
+	font-size: 1.7rem;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: auto;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 0.5rem;
+}
+
+/* Contact - mobile */
+/*----------------------------------------------------*/
+
+fieldset {
+	text-align: left;
+	border: 1px solid black;
+	margin-top: 1em;
+}
+
+fieldset div {
+	padding: 0.6em;
+}
+
+fieldset legend {
+	margin-left: 1em;
+}
+
+.smalltext {
+	width: 30px;
+}
+
+fieldset:nth-child(3) {
+	margin-top: 0.3em;
+	padding: 0.3em;
+}
+
+fieldset:nth-child(3) input:nth-child(1) {
+	float: left;
+}
+
+fieldset:nth-child(3) input:nth-child(2) {
+	float: right;
+}
+
+#map {
+	width: 80%;
+	margin: auto;
+}
+
+/* Footer - mobile */
+/*----------------------------------------------------*/
+footer {
+	display: flex;
+	background-color: black;
+	color: white;
+	justify-content: space-between;
+	padding: 0 2rem 0 2rem;
+}
+
+.footer-nav {
+	background-color: black;
+}
+
+/* Tablet View (768px) */
+/*----------------------------------------------------*/
+
+@media (min-width: 768px) {
+	body {
+		font-size: 1.1rem;
+	}	
+}
+
+/* Nav - tablet */
+/*----------------------------------------------------*/
+
+@media (min-width: 768px) {
+	nav ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav ul li {
+		margin: 0 0.5em 0 0.5em;
+		border: 0;
+	}
+}
+
+/* Home - tablet */
+/*----------------------------------------------------*/
+
+@media (min-width: 768px) {
+	#home {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.homebox {
+		height: 13em;
+	}
+}
+
+/* About - tablet */
+/*----------------------------------------------------*/
+
+@media (min-width: 768px) {
+	#about {
+		position: relative;
+	}
+
+	#about img {
+		width: 300px;
+		float: left;
+		margin: 1em 1em 1em 0em;
+	}
+}
+
+/* Desktop View (1024px) */
+/*----------------------------------------------------*/
+
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 60%;
+	}
+}
+
+/* Home - desktop */
+/*----------------------------------------------------*/
+
+@media (min-width: 1024px) {
+	#home {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+/* About/Contact - desktop */
+/*----------------------------------------------------*/
+
+@media (min-width: 1024px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+	}
+
+	#about img {
+		width: 250px;
+	}
+
+	#map {
+		height: 500px;
+	}
+}

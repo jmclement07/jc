@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact - Ottawa Minor Hockey</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<a id="top"></a>
+<!-- Header and Nav- To be repeated on all pages -->
+	<header>
+		<picture>
+			<source srcset="img/minorhockey4k.png" media="(min-width: 1920px)">
+			<source srcset="img/minorhockeydesktop.png" media="(min-width: 768px)">
+			<img src="img/minorhockeytablet.png" alt="Minor Hockey Kids on the Ice">
+		</picture>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" class="current-page">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper" id="contact">
+		<main>
+			<h1>Registration</h1>
+			<form method="GET" action="contact.html">
+<!-- Fieldset 1 - Personal Information -->
+				<fieldset>
+					<legend>Personal and Contact Info</legend>
+						<div>
+							<label for="fname">First Name:</label>
+							<input type="text" name="fname" id="fname">
+						</div>
+						<div>
+							<label for="lname">Last Name:</label>
+							<input type="text" name="lname" id="lname">
+						</div>
+						<div>
+							<label for="region">Region</label>
+							<select name="region" id="region">
+								<option selected disabled>Please Select</option>
+								<option value="1">Ottawa Center</option>
+								<option value="2">Vanier</option>
+								<option value="3">Orleans</option>
+								<option value="4">Glebe</option>
+								<option value="5">Riverside South</option>
+								<option value="6">Nepean</option>
+								<option value="7">Manotick</option>
+								<option value="8">Kanata</option>
+								<option value="9">Other</option>
+							</select>
+						</div>
+						<div>
+							<label for="other">If Other please specify:</label>
+							<input type="text" name="other" id="other">
+						</div>
+						<div>
+							<label for="bday">Birthday</label>
+							<input type="text" name="birth-day" id="bday" value="dd" class="smalltext">
+							<input type="text" name="birth-month" value="mm" class="smalltext">
+							<input type="text" name="birth-year" value="yyyy" class="smalltext">
+						</div>
+				</fieldset>
+<!-- Fieldset 2 - Hockey related information -->
+				<fieldset>
+					<legend>Hockey Info</legend>
+						<div>
+							<p>Shoots</p>
+							<input type="checkbox" name="shoots" value="left"> Left<br>
+							<input type="checkbox" name="shoots" value="right"> Right
+						</div>
+						<div>
+							<p>Primary Position (Select One)</p>
+							<input type="radio" name="pposition" value="lwing"> Left Wing
+							<input type="radio" name="pposition" value="center"> Center
+							<input type="radio" name="pposition" value="rwing"> Right Wing<br>
+							<input type="radio" name="pposition" value="d"> Defense<br>
+							<input type="radio" name="pposition" value="g"> Goaltender
+						</div>
+						<div>
+							<p>Secondary Positions</p>
+							<input type="checkbox" name="sposition" value="lwing"> Left Wing
+							<input type="checkbox" name="sposition" value="center"> Center
+							<input type="checkbox" name="sposition" value="rwing"> Right Wing<br>
+							<input type="checkbox" name="sposition" value="d"> Defense<br>
+							<input type="checkbox" name="sposition" value="g"> Goaltender
+						</div>
+						<div>
+							<label for="height">Height:</label>
+							<input type="text" name="feet" id="height" class="smalltext">Feet  
+							<input type="text" name="inches" class="smalltext">Inches  
+						</div>
+						<div>
+							<label for="weight">Weight:</label>
+							<input type="text" name="punds" id="weight" class="smalltext">Lb
+						</div>
+				</fieldset>
+<!-- Submit and Reset buttons -->
+				<fieldset>
+					<input type="submit" value="Register">
+					<input type="reset" value="Clear Form">
+				</fieldset>
+			</form>
+		</main>
+<!-- Google Map embed -->
+		<aside>
+			<h2>Directions</h2>
+			<p>Find directions to all of the arenas around the city!</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.389630950125!2d-75.76404204885284!3d45.280347753610634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccdfd03d360c8bb%3A0x47f5f7497ed2ba00!2sWalter%20Baker%20Sports%20Centre!5e0!3m2!1sen!2sca!4v1586723390260!5m2!1sen!2sca" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
+		</aside>
+	</div>
+<!-- Footer and Bottom Nav- To be repeated on all pages -->
+	<div class="redbar">
+		<h3>Ottawa Minor Hockey</h3>
+	</div>
+	<footer>
+		<p>&copy; Copyright</p>
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" class="current-page">Contact</a></li>
+			</ul>
+		</nav>
+<!-- Back to top button - To be repeated on all pages -->
+		<p><a href="#top">Back to Top</a></p>
+	</footer>
+</body>
+</html>
